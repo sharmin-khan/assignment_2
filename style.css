@@ -11,17 +11,32 @@
     font-style: normal;
 }
 
-/* shared styles */
-body {
-    padding: 0 140px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* shared styles */
+.secondary_color {
+    color: #202020;
+}
+
+.p_color {
+    color: #808080;
+}
+
+/* style header */
+header {
+    padding: 0 140px;
+}
 
 /* navbar styles */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 25px;
 }
 
 .logo {
@@ -48,7 +63,6 @@ nav {
 .nav_item a {
     text-decoration: none;
     font-size: 1.25rem;
-
 }
 
 .item1 {
@@ -61,12 +75,10 @@ nav {
 
 .item3 {
     color: #05D4DF;
-
 }
 
 .item4 {
     color: #5D58EF;
-
 }
 
 .btn_primary {
@@ -79,7 +91,135 @@ nav {
     border-radius: 12px;
     cursor: pointer;
 }
-.menu_btn{
+
+.menu_btn {
     display: none;
 }
 
+/* banner section styles */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_content {
+    margin: 140px 0;
+}
+
+.banner_title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.banner_subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 24px 0;
+}
+
+.banner_btn {
+    padding: 10px 47px;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Standard Curriculum section style */
+.curriculum {
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60px 140px;
+    margin-top: 80px;
+}
+
+.curriculum_title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.curriculum_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin: 80px 0;
+}
+
+.card_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 32px;
+}
+
+.card {
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+}
+
+.card1 {
+    background: linear-gradient(to bottom, rgb(253, 196, 253), white);
+    border: 1px solid rgb(244, 203, 244);
+}
+
+.card2 {
+    background: linear-gradient(to bottom, rgb(169, 249, 174), white);
+    border: 1px solid rgb(203, 243, 201);
+}
+
+.card3 {
+    background: linear-gradient(to bottom, rgb(203, 206, 255), white);
+    border: 1px solid rgb(211, 206, 250);
+}
+
+.education_info {
+    padding: 33px 0;
+    font-family: 1rem;
+    font-weight: 500;
+}
+
+.detail {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 58px;
+    border: none;
+    background-color: transparent;
+}
+
+.detail_link1 {
+    color: #fb56d2;
+}
+
+.detail_link2 {
+    color: #54cf5e;
+}
+
+.detail_link3 {
+    color: #6b5dd7;
+}
+
+.arrow_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.arrow_btn a {
+    background-color: #FEA301;
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    margin: 20px 10px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
