@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-style: normal;
+}
+
+.raleway {
+    font-family: "Raleway", serif;
+    font-style: normal;
+}
+
+/* shared styles */
+body {
+    padding: 0 140px;
+}
+
+
+/* navbar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.school_logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav_item {
+    list-style: none;
+}
+
+.nav_item a {
+    text-decoration: none;
+    font-size: 1.25rem;
+
+}
+
+.item1 {
+    color: #FEA301;
+}
+
+.item2 {
+    color: #01ACFD;
+}
+
+.item3 {
+    color: #05D4DF;
+
+}
+
+.item4 {
+    color: #5D58EF;
+
+}
+
+.btn_primary {
+    padding: 10px 60px;
+    background: #FEA301;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.menu_btn{
+    display: none;
+}
+
