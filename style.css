@@ -101,6 +101,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+  
 }
 
 .banner_content {
@@ -127,6 +128,20 @@ nav {
     font-weight: 500;
     border: none;
     border-radius: 12px;
+}
+
+.marquee_text {
+    margin-top: 30px;
+    border: 1px solid rgb(231, 219, 219);
+    border-radius: 12px;
+}
+
+marquee {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    align-items: center;
+    font-weight: 500;
+    color: #01ACFD;
 }
 
 /* Standard Curriculum section style */
@@ -217,11 +232,12 @@ nav {
     color: #FFFFFF;
     border: none;
     cursor: pointer;
+    margin: 0 5px;
 }
 
 /* our stories section styles */
 .stories {
-    background: linear-gradient(to top, rgb(247, 255, 163), transparent), url("images/bg.png");
+    background: linear-gradient(to top, rgba(215, 228, 67, 0.5), transparent), url("images/bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -247,14 +263,20 @@ nav {
     width: 45%;
 }
 
+.story_btnn,
+.box_button {
+    width: 100%;
+    margin-top: -25px;
+    padding-left: 35px;
+
+}
+
 .story_btn {
     padding: 15px 25px;
     background-color: #05D4DF;
     color: #FFFFFF;
     border: none;
     border-radius: 30px;
-    margin-left: 35px;
-
 }
 
 .stories_card_title {
@@ -267,7 +289,6 @@ nav {
 .stories_content {
     padding-left: 35px;
     line-height: 28px;
-
 }
 
 .stories_box {
@@ -280,10 +301,11 @@ nav {
 
 .box_title {
     font-size: .9rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 28px;
-    padding-left: 30px;
+    padding-left: 35px;
     padding-bottom: 10px;
+    margin-top: 20px;
 }
 
 .stories_box .box {
@@ -310,6 +332,14 @@ nav {
 
 }
 
+.box_btn_color {
+    padding: 10px 18px;
+    color: #FFFFFF;
+    background-color: #5D58EF;
+    border: none;
+    border-radius: 30px;
+}
+
 .view_btn {
     text-align: center;
 }
@@ -319,10 +349,11 @@ nav {
     background-color: #000000;
     color: #FFFFFF;
     border-radius: 12px;
-    margin: 40px 0 30px;
+    margin: 45px 0;
     font-size: 1.25rem;
     font-weight: 500;
     border: none;
+    cursor: pointer;
 }
 
 /* footer styles */
@@ -345,20 +376,19 @@ footer {
 }
 
 .kids_education {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-left: 5px;
     color: #FFFFFF;
     font-weight: bold;
-
 }
 
 .footer_content {
     font-size: 1rem;
     color: #FFFFFF;
-
+    line-height: 28px;
 }
 
-.about_school {
+.about_school, .keep_intouch {
     margin: 0 auto;
 }
 
@@ -378,10 +408,86 @@ footer {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 1rem;
-    font-weight: 400;
-
+    font-weight: 500;
+}
+.keep_intouch img {
+    cursor: pointer;
 }
 
-.keep_intouch {
-    margin: 0 auto;
+/* Responsive media query */
+@media screen and (max-width: 576px){
+    header {
+        padding: 0;
+    }
+    .nav_links, .btn{
+        display: none;
+    }
+    .menu_btn{
+        display: block;
+        font-size: 30px;
+    }
+    nav{
+        justify-content: space-between;
+        padding-top: 10px;
+        border: 1px solid #FEA301;
+        padding: 10px;
+        
+    }
+   .banner{
+    flex-direction: column-reverse;
+   }
+   .banner_content{
+    text-align: center;
+    margin: 40px 0 60px;
+    padding: 0 15px;
+   }
+   .banner_img{
+    width: 100%;
+    padding: 0 10px;
+   }
+   .banner_img img{
+    width: 100%;
+   }
+   .marquee_text{
+    display: none;
+   }
+   .curriculum{
+    padding: 0px 10px;
+    margin-top: 0;
+   }
+   .curriculum_title {
+    font-size: 2.3rem;
+   }
+   .curriculum_cards{
+    grid-template-columns: 1fr;
+    margin: 30px 0;
+   }
+   .arrow_btn{
+    display: none;
+   }
+   .stories_card{
+    display: none;
+   }
+   .stories{
+    padding: 0px 10px;
+   }
+   .stories_box{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+   }
+   .box_title {
+    line-height: 20px;
+}
+   footer {
+    background-color: #04c6f2;
+    padding: 80px 10px;
+}
+   .footer_container {
+    grid-template-columns: 1fr;
+}
+.about_school, .keep_intouch {
+    margin: 0;
+}
+
 }
