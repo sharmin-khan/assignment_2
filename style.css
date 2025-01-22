@@ -181,18 +181,18 @@ marquee {
 }
 
 .card1 {
-    background: linear-gradient(to bottom, rgb(253, 196, 253), white);
-    border: 1px solid rgb(244, 203, 244);
+    background: linear-gradient(to bottom, rgb(253, 196, 253, .7), white);
+    border: 1px solid rgb(252, 239, 252);
 }
 
 .card2 {
     background: linear-gradient(to bottom, rgba(255, 244, 220, 1.00), white);
-    border: 1px solid rgb(203, 243, 201);
+    border: 1px solid rgba(255, 244, 220);
 }
 
 .card3 {
     background: linear-gradient(to bottom, rgba(238, 225, 255, 1.00), white);
-    border: 1px solid rgb(211, 206, 250);
+    border: 1px solid rgb(235, 233, 250);
 }
 
 .education_info {
