@@ -328,7 +328,7 @@ marquee {
 .box_btn {
     padding: 10px 18px;
     color: #FFFFFF;
-    background-color: #56eb63;
+    background-color: #27f738;
     border: none;
     border-radius: 30px;
 
@@ -423,6 +423,12 @@ footer {
     header {
         padding: 0;
     }
+    .school_logo{
+        display: none;
+    }
+    .banner_img{
+        margin-top: 30px;
+    }
 
     .nav_links,
     .btn {
@@ -470,13 +476,13 @@ footer {
         margin-top: 0;
     }
 
-    .curriculum_title {
-        font-size: 2.3rem;
+    .curriculum_title, .stories_title {
+        font-size: 2.2rem;
     }
 
     .curriculum_cards {
         grid-template-columns: 1fr;
-        margin: 30px 0;
+        margin: 40px 0;
     }
 
     .arrow_btn {
@@ -498,7 +504,17 @@ footer {
     }
 
     .box_title {
-        line-height: 20px;
+        line-height: 18px;
+        padding-left: 20px;
+
+    }
+    .box_btn {
+        padding: 7px 12px;
+    }
+   .box_button {
+    margin-top: -20px;
+    padding-left: 20px;
+
     }
 
     footer {
