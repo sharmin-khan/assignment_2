@@ -101,7 +101,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
 }
 
 .banner_content {
@@ -128,6 +128,7 @@ nav {
     font-weight: 500;
     border: none;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 .marquee_text {
@@ -185,12 +186,12 @@ marquee {
 }
 
 .card2 {
-    background: linear-gradient(to bottom, rgb(169, 249, 174), white);
+    background: linear-gradient(to bottom, rgba(255, 244, 220, 1.00), white);
     border: 1px solid rgb(203, 243, 201);
 }
 
 .card3 {
-    background: linear-gradient(to bottom, rgb(203, 206, 255), white);
+    background: linear-gradient(to bottom, rgba(238, 225, 255, 1.00), white);
     border: 1px solid rgb(211, 206, 250);
 }
 
@@ -206,6 +207,7 @@ marquee {
     margin-bottom: 58px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .detail_link1 {
@@ -237,7 +239,7 @@ marquee {
 
 /* our stories section styles */
 .stories {
-    background: linear-gradient(to top, rgba(215, 228, 67, 0.5), transparent), url("images/bg.png");
+    background: linear-gradient(to top, rgba(232, 245, 81, 0.5), transparent), url("images/bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -388,7 +390,8 @@ footer {
     line-height: 28px;
 }
 
-.about_school, .keep_intouch {
+.about_school,
+.keep_intouch {
     margin: 0 auto;
 }
 
@@ -410,84 +413,106 @@ footer {
     font-size: 1rem;
     font-weight: 500;
 }
+
 .keep_intouch img {
     cursor: pointer;
 }
 
 /* Responsive media query */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     header {
         padding: 0;
     }
-    .nav_links, .btn{
+
+    .nav_links,
+    .btn {
         display: none;
     }
-    .menu_btn{
+
+    .menu_btn {
         display: block;
         font-size: 30px;
     }
-    nav{
+
+    nav {
         justify-content: space-between;
         padding-top: 10px;
         border: 1px solid #FEA301;
         padding: 10px;
-        
+
     }
-   .banner{
-    flex-direction: column-reverse;
-   }
-   .banner_content{
-    text-align: center;
-    margin: 40px 0 60px;
-    padding: 0 15px;
-   }
-   .banner_img{
-    width: 100%;
-    padding: 0 10px;
-   }
-   .banner_img img{
-    width: 100%;
-   }
-   .marquee_text{
-    display: none;
-   }
-   .curriculum{
-    padding: 0px 10px;
-    margin-top: 0;
-   }
-   .curriculum_title {
-    font-size: 2.3rem;
-   }
-   .curriculum_cards{
-    grid-template-columns: 1fr;
-    margin: 30px 0;
-   }
-   .arrow_btn{
-    display: none;
-   }
-   .stories_card{
-    display: none;
-   }
-   .stories{
-    padding: 0px 10px;
-   }
-   .stories_box{
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    width: 100%;
-   }
-   .box_title {
-    line-height: 20px;
-}
-   footer {
-    background-color: #04c6f2;
-    padding: 80px 10px;
-}
-   .footer_container {
-    grid-template-columns: 1fr;
-}
-.about_school, .keep_intouch {
-    margin: 0;
-}
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner_content {
+        text-align: center;
+        margin: 40px 0 60px;
+        padding: 0 15px;
+    }
+
+    .banner_img {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .banner_img img {
+        width: 100%;
+    }
+
+    .marquee_text {
+        display: none;
+    }
+
+    .curriculum {
+        padding: 0px 10px;
+        margin-top: 0;
+    }
+
+    .curriculum_title {
+        font-size: 2.3rem;
+    }
+
+    .curriculum_cards {
+        grid-template-columns: 1fr;
+        margin: 30px 0;
+    }
+
+    .arrow_btn {
+        display: none;
+    }
+
+    .stories_card {
+        display: none;
+    }
+
+    .stories {
+        padding: 0px 10px;
+    }
+
+    .stories_box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+
+    .box_title {
+        line-height: 20px;
+    }
+
+    footer {
+        background-color: #04c6f2;
+        padding: 80px 10px;
+    }
+
+    .footer_container {
+        grid-template-columns: 1fr;
+    }
+
+    .about_school,
+    .keep_intouch {
+        margin: 0;
+    }
 
 }
